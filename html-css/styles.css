@@ -12,4 +12,96 @@ the font is called 'nunito' and can be found on google fonts
 ***you can use it if you'd like or you can choose your own***
 
 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+
+header {
+    padding: 15px; 
+    background-color: rgb(37, 37, 37);
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+}
+
+nav {
+    color: rgb(255, 255, 255);
+    display: inline;
+    float: right;
+    margin-top: 10px;
+    margin-right: 45px;
+    
+}
+
+p {
+    margin: 10px;
+}
+
+ul {
+    width: 30vw;
+    list-style-type: none;  
+    display: flex; 
+    justify-content: space-between;
+}
+
+main {
+    position: relative;
+    top: 80px;
+    margin: 0px 30vw 0px 45px;
+}
+
+h1 {
+    color: rgb(42, 171, 226);
+    float: left;
+}
+
+section {
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+aside {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 27px 21px rgba(0,0,0,0.3);
+    height: 320px;
+    width: 300px;
+    padding-top: 45px;
+    border-radius: 15px;
+}
+
+.userPhoto {
+    height: 185px;
+    width: 185px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.userName {
+    text-align: center;
+}
+
+article {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 27px 21px rgba(0,0,0,0.3);
+    padding: 50px;
+    height: 400px;
+    width: 300px;
+    line-height: 1.5;
+    border-radius: 15px;
+}
+
+
+img {
+    height: 125px;
+    width: 175px;
+}
+footer {
+    background-color: rgb(42, 171, 226);
+}
