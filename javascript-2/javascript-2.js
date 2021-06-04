@@ -36,6 +36,11 @@ let foods = [
 */
 
 //CODE HERE
+foods.forEach(e => {
+  let calories = (e.carbs * 4) + (e.protein * 4) + (e.fat * 9)
+  e.calories = calories;
+})
+
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -81,6 +86,13 @@ const products = [
 */
 
 //CODE HERE
+let saleProducts = products.map(e => {
+  let product = { ...e }
+  product.price = product.price - (product.price * 0.25)
+  return product
+})
+console.log(saleProducts)
+
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -251,6 +263,29 @@ const userInfo = {
 */
 
 //CODE HERE
+let person = {
+  name: "Bob",
+  age: 22,
+  jobs: ["carpenter", "dentist", "lawyer"],
+  birthday: function () {
+    this.age += 1;
+  },
+  favorites: {
+    color: "blue",
+    number: 12,
+    book: "good book",
+  },
+  kids: [
+    {
+      name: "Bobby",
+      age: 2,
+    },
+    {
+      name: "Sally",
+      age: 3
+    }]
+}
+
 
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
