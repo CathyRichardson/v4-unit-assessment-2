@@ -103,6 +103,7 @@ console.log(saleProducts)
 */
 
 //CODE HERE
+let blueProducts = saleProducts.filter(e => e.color.includes('blue'))
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -112,6 +113,9 @@ console.log(saleProducts)
 */
 
 //CODE HERE
+let orderTotal = blueProducts.reduce((acc, curr) => {
+  return acc + curr.price;
+}, 0)
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
@@ -142,6 +146,7 @@ const shippingInfo = {
 */
 
 //CODE HERE
+let helensInfo = Object.assign(contactInfo, shippingInfo);
 
 ////////////////////PROBLEM 6////////////////////
 /*
@@ -151,6 +156,7 @@ const shippingInfo = {
 */
 
 //CODE HERE
+let ellensInfo = {...helensInfo, name:'Ellen', email: 'ellen@email.com'}
 
 ////////////////////PROBLEM 7////////////////////
 /* 
@@ -158,6 +164,7 @@ const shippingInfo = {
 */
 
 //CODE HERE
+const {email} = ellensInfo;
 
 ////////////////////PROBLEM 8////////////////////
 /*
@@ -166,6 +173,7 @@ const shippingInfo = {
 */
 
 //CODE HERE
+const {state, zipCode} = shippingInfo;
 
 //////////////////////////////////PROBLEMS 9-11//////////////////////////////////
 /*
@@ -228,6 +236,8 @@ const userInfo = {
 */
 
 //CODE HERE
+shouldAlert = userInfo.settings.alerts;
+
 
 ////////////////////PROBLEM 10////////////////////
 /*
@@ -236,6 +246,7 @@ const userInfo = {
 */
 
 //CODE HERE
+topic = userInfo.topics[3];
 
 ////////////////////PROBLEM 11////////////////////
 /*
@@ -244,6 +255,7 @@ const userInfo = {
 */
 
 //CODE HERE
+commenterId = userInfo.comments[1].responses[0].userId
 
 ////////////////////PROBLEM 12////////////////////
 /*
@@ -311,7 +323,7 @@ const workout = {
 //let context1 = myFunc
 //let context1 = window
 //let context1 = global
-// let context1 = workout
+let context1 = workout
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -324,6 +336,6 @@ function myFunc() {
 }
 
 //let context2 = myFunc
-// let context2 = window
-//let context2 = global
+let context2 = window
+// let context2 = global
 //let context2 = workout
