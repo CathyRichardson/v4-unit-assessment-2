@@ -325,7 +325,13 @@ const fidoIntro = dogIntro.apply(fido, ['chicken', 'tennis ball']);
 */
 
 //CODE HERE
-
+function Phone( brand, model, storage, color, sold) {
+    this.brand = brand;
+    this.model = model;
+    this.storage = storage;
+    this.color = color;
+    this.sold = sold; 
+}
 
 /*
     Next make three new phones using your constructor function.
@@ -339,11 +345,11 @@ const fidoIntro = dogIntro.apply(fido, ['chicken', 'tennis ball']);
 */
 
 //CODE HERE
-  // let phone1 = 
+  let phone1 = new Phone("Apple", "iphone1", 100, "red", false);
 
-  // let phone2 = 
+  let phone2 = new Phone("Apple", "iphone2", 100, "red", false);
 
-  // let phone3 = 
+  let phone3 = new Phone("Apple", "iphone3", 100, "red", false);
 
 /*
     Last, add a prototype method to Phone.
@@ -354,4 +360,7 @@ const fidoIntro = dogIntro.apply(fido, ['chicken', 'tennis ball']);
 */
 
 //CODE HERE
-
+Phone.prototype.sell = function () {
+    this.sold = true;
+    return `${this.brand} ${this.model} has been sold.`
+}
